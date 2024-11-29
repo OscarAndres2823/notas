@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organizador de Notas y Recordatorios</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Organizador de Notas</h1>
+    <form id="noteForm">
+      <input type="text" id="noteTitle" placeholder="Título de la nota" required>
+      <textarea id="noteContent" placeholder="Contenido de la nota" required></textarea>
+      <select id="noteColor">
+        <option value="yellow">Amarillo</option>
+        <option value="pink">Rosa</option>
+        <option value="lightblue">Azul Claro</option>
+        <option value="lightgreen">Verde Claro</option>
+        <option value="orange">Naranja</option>
+        <option value="purple">Morado</option>
+        <option value="white">Blanco</option>
+      </select>
+      <label for="alarmTime">Establecer Alarma:</label>
+      <input type="datetime-local" id="alarmTime">
+      <button type="submit">Añadir Nota</button>
+    </form>
+    <div id="notesContainer"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

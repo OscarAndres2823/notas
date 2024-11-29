@@ -1,0 +1,173 @@
+/* Reseteo básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo general de la aplicación */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .app {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Estilos del formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, textarea, select, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  input[type="text"], textarea {
+    width: 100%;
+  }
+  
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilo del contenedor de notas */
+  #notesContainer {
+    margin-top: 30px;
+  }
+  
+  .note {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 20px;
+  }
+  
+  .note h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .note p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .note .actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .note .actions button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff6347;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .note .actions button:hover {
+    background-color: #e5533d;
+  }
+  
+  
+  /* Estilo de alarma */
+  .note p:last-child {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .app {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    input, textarea, select, button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    textarea {
+      height: 120px;
+    }
+  
+    button {
+      padding: 10px;
+      font-size: 16px;
+    }
+  
+    .note h3 {
+      font-size: 16px;
+    }
+  
+    .note p {
+      font-size: 14px;
+    }
+  
+    .note .actions button {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .note {
+      padding: 15px;
+    }
+  
+    .note .actions button {
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  }
+  
+  
